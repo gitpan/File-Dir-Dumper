@@ -1,0 +1,41 @@
+---
+name: File-Dir-Dumper
+version: 0.0.1
+author:
+  - 'Shlomi Fish <shlomif@cpan.org>'
+abstract: |-
+  dump directory structures' meta-data in a consistent and 
+  machine-readable way.
+license: mit
+resources:
+  license: http://opensource.org/licenses/mit-license.php
+requires:
+  Class::Accessor: 0
+  File::Find::Object: 0.1.2
+  JSON: 0
+build_requires:
+  IO::Scalar: 0
+  Test::More: 0
+provides:
+  File::Dir::Dumper:
+    file: lib/File/Dir/Dumper.pm
+    version: 0.0.1
+  File::Dir::Dumper::App:
+    file: lib/File/Dir/Dumper/App.pm
+    version: 0.0.1
+  File::Dir::Dumper::Base:
+    file: lib/File/Dir/Dumper/Base.pm
+    version: 0.0.1
+  File::Dir::Dumper::Scanner:
+    file: lib/File/Dir/Dumper/Scanner.pm
+    version: 0.0.1
+  File::Dir::Dumper::Stream::JSON::Reader:
+    file: lib/File/Dir/Dumper/Stream/JSON/Reader.pm
+    version: 0.0.1
+  File::Dir::Dumper::Stream::JSON::Writer:
+    file: lib/File/Dir/Dumper/Stream/JSON/Writer.pm
+    version: 0.0.1
+generated_by: Module::Build version 0.2808
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
