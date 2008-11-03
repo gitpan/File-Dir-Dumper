@@ -1,6 +1,6 @@
 ---
 name: File-Dir-Dumper
-version: 0.0.1
+version: 0.0.2
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
 abstract: |-
@@ -19,22 +19,22 @@ build_requires:
 provides:
   File::Dir::Dumper:
     file: lib/File/Dir/Dumper.pm
-    version: 0.0.1
+    version: 0.0.2
   File::Dir::Dumper::App:
     file: lib/File/Dir/Dumper/App.pm
-    version: 0.0.1
+    version: 0.0.2
   File::Dir::Dumper::Base:
     file: lib/File/Dir/Dumper/Base.pm
-    version: 0.0.1
+    version: 0.0.2
   File::Dir::Dumper::Scanner:
     file: lib/File/Dir/Dumper/Scanner.pm
-    version: 0.0.1
+    version: 0.0.2
   File::Dir::Dumper::Stream::JSON::Reader:
     file: lib/File/Dir/Dumper/Stream/JSON/Reader.pm
-    version: 0.0.1
+    version: 0.0.2
   File::Dir::Dumper::Stream::JSON::Writer:
     file: lib/File/Dir/Dumper/Stream/JSON/Writer.pm
-    version: 0.0.1
+    version: 0.0.2
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

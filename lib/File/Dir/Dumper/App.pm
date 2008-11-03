@@ -8,7 +8,9 @@ use base 'File::Dir::Dumper::Base';
 use Carp;
 
 use Getopt::Long qw(GetOptionsFromArray);
+
 use File::Dir::Dumper::Scanner;
+use File::Dir::Dumper::Stream::JSON::Writer;
 
 __PACKAGE__->mk_accessors(
     qw(
@@ -25,11 +27,11 @@ dumping.
 
 =head1 VERSION
 
-Version 0.0.1
+Version 0.0.2
 
 =cut
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 
 =head1 SYNOPSIS
 
