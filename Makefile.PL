@@ -5,11 +5,17 @@ WriteMakefile
           'NAME' => 'File::Dir::Dumper',
           'VERSION_FROM' => 'lib/File/Dir/Dumper.pm',
           'PREREQ_PM' => {
+                           'Carp' => 0,
                            'Class::Accessor' => 0,
                            'File::Find::Object' => '0.1.2',
+                           'Getopt::Long' => '2.36',
                            'IO::Scalar' => 0,
                            'JSON' => 0,
-                           'Test::More' => 0
+                           'List::Util' => 0,
+                           'POSIX' => 0,
+                           'Test::More' => 0,
+                           'strict' => 0,
+                           'warnings' => 0
                          },
           'INSTALLDIRS' => 'site',
           'EXE_FILES' => [
