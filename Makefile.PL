@@ -9,7 +9,7 @@ WriteMakefile
                            'Class::Accessor' => 0,
                            'File::Find::Object' => '0.1.2',
                            'Getopt::Long' => '2.36',
-                           'IO::Scalar' => 0,
+                           'IO::String' => 0,
                            'JSON' => 0,
                            'List::Util' => 0,
                            'POSIX' => 0,

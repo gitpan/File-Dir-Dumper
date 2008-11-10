@@ -10,11 +10,11 @@ machine-readable way.
 
 =head1 VERSION
 
-Version 0.0.3
+Version 0.0.4
 
 =cut
 
-our $VERSION = '0.0.3';
+our $VERSION = '0.0.4';
 
 =head1 SYNOPSIS
 
@@ -71,6 +71,13 @@ L<http://search.cpan.org/dist/File-Dir-Dumper>
 
 =back
 
+=head1 SEE ALSO
+
+L<File::Find::Object>
+
+L<http://code.google.com/p/xml-dir-listing/> and
+L<http://dir2xml.sourceforge.net/> are two projects that provide similar
+functionality while utilising XML and Java instead of JSON and Perl.
 
 =head1 ACKNOWLEDGEMENTS
 

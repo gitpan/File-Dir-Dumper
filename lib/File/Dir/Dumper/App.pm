@@ -8,6 +8,7 @@ use base 'File::Dir::Dumper::Base';
 use Carp;
 
 use Getopt::Long qw(GetOptionsFromArray);
+use Pod::Usage;
 
 use File::Dir::Dumper::Scanner;
 use File::Dir::Dumper::Stream::JSON::Writer;
@@ -27,11 +28,11 @@ dumping.
 
 =head1 VERSION
 
-Version 0.0.3
+Version 0.0.4
 
 =cut
 
-our $VERSION = '0.0.3';
+our $VERSION = '0.0.4';
 
 =head1 SYNOPSIS
 
@@ -62,9 +63,16 @@ sub _init
 
     my $output_dest;
 
+    my ($help, $man);
+
     GetOptionsFromArray($argv,
         "output|o=s" => \$output_dest,
+        'help|h' => \$help,
+        'man' => \$man,
     );
+
+    pod2usage(1) if $help;
+    pod2usage(-exitstatus => 0, -verbose => 2) if $man;    
 
     my $dir_to_dump = shift(@$argv);
 
