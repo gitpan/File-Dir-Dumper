@@ -1,6 +1,6 @@
 ---
 name: File-Dir-Dumper
-version: 0.0.5
+version: 0.0.6
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
 abstract: |-
@@ -8,7 +8,9 @@ abstract: |-
   machine-readable way.
 license: mit
 resources:
-  license: http://opensource.org/licenses/mit-license.php
+  homepage: http://www.shlomifish.org/open-source/projects/File-Dir-Dumper/
+  license: http://www.opensource.org/licenses/mit-license.php
+  repository: http://svn.berlios.de/svnroot/repos/web-cpan/File-Dir-Dumper/
 requires:
   Carp: 0
   Class::Accessor: 0
@@ -25,23 +27,42 @@ build_requires:
 provides:
   File::Dir::Dumper:
     file: lib/File/Dir/Dumper.pm
-    version: 0.0.5
+    version: 0.0.6
   File::Dir::Dumper::App:
     file: lib/File/Dir/Dumper/App.pm
-    version: 0.0.5
+    version: 0.0.6
   File::Dir::Dumper::Base:
     file: lib/File/Dir/Dumper/Base.pm
-    version: 0.0.5
+    version: 0.0.6
   File::Dir::Dumper::Scanner:
     file: lib/File/Dir/Dumper/Scanner.pm
-    version: 0.0.5
+    version: 0.0.6
   File::Dir::Dumper::Stream::JSON::Reader:
     file: lib/File/Dir/Dumper/Stream/JSON/Reader.pm
-    version: 0.0.5
+    version: 0.0.6
   File::Dir::Dumper::Stream::JSON::Writer:
     file: lib/File/Dir/Dumper/Stream/JSON/Writer.pm
-    version: 0.0.5
-generated_by: Module::Build version 0.2808
+    version: 0.0.6
+generated_by: Module::Build version 0.33
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+keywords:
+  - depth
+  - dir
+  - directory
+  - dumper
+  - file
+  - filename
+  - group
+  - json
+  - length
+  - meta-data
+  - mtime
+  - permissions
+  - pure-perl
+  - size
+  - stream
+  - traverse
+  - tree
+  - user
