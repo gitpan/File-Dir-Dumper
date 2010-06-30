@@ -1,52 +1,14 @@
 ---
-name: File-Dir-Dumper
-version: 0.0.6
+abstract: "dump directory structures' meta-data in a consistent and \nmachine-readable way."
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
-abstract: |-
-  dump directory structures' meta-data in a consistent and 
-  machine-readable way.
-license: mit
-resources:
-  homepage: http://www.shlomifish.org/open-source/projects/File-Dir-Dumper/
-  license: http://www.opensource.org/licenses/mit-license.php
-  repository: http://svn.berlios.de/svnroot/repos/web-cpan/File-Dir-Dumper/
-requires:
-  Carp: 0
-  Class::Accessor: 0
-  File::Find::Object: 0.1.2
-  Getopt::Long: 2.36
-  JSON: 0
-  List::Util: 0
-  POSIX: 0
-  strict: 0
-  warnings: 0
 build_requires:
+  Devel::CheckOS: 0
   IO::String: 0
   Test::More: 0
-provides:
-  File::Dir::Dumper:
-    file: lib/File/Dir/Dumper.pm
-    version: 0.0.6
-  File::Dir::Dumper::App:
-    file: lib/File/Dir/Dumper/App.pm
-    version: 0.0.6
-  File::Dir::Dumper::Base:
-    file: lib/File/Dir/Dumper/Base.pm
-    version: 0.0.6
-  File::Dir::Dumper::Scanner:
-    file: lib/File/Dir/Dumper/Scanner.pm
-    version: 0.0.6
-  File::Dir::Dumper::Stream::JSON::Reader:
-    file: lib/File/Dir/Dumper/Stream/JSON/Reader.pm
-    version: 0.0.6
-  File::Dir::Dumper::Stream::JSON::Writer:
-    file: lib/File/Dir/Dumper/Stream/JSON/Writer.pm
-    version: 0.0.6
-generated_by: Module::Build version 0.33
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
 keywords:
   - depth
   - dir
@@ -66,3 +28,43 @@ keywords:
   - traverse
   - tree
   - user
+license: mit
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: File-Dir-Dumper
+provides:
+  File::Dir::Dumper:
+    file: lib/File/Dir/Dumper.pm
+    version: v0.0.7
+  File::Dir::Dumper::App:
+    file: lib/File/Dir/Dumper/App.pm
+    version: v0.0.7
+  File::Dir::Dumper::Base:
+    file: lib/File/Dir/Dumper/Base.pm
+    version: v0.0.7
+  File::Dir::Dumper::Scanner:
+    file: lib/File/Dir/Dumper/Scanner.pm
+    version: v0.0.7
+  File::Dir::Dumper::Stream::JSON::Reader:
+    file: lib/File/Dir/Dumper/Stream/JSON/Reader.pm
+    version: v0.0.7
+  File::Dir::Dumper::Stream::JSON::Writer:
+    file: lib/File/Dir/Dumper/Stream/JSON/Writer.pm
+    version: v0.0.7
+requires:
+  Carp: 0
+  Class::Accessor: 0
+  Devel::CheckOS: 0
+  File::Find::Object: v0.1.2
+  Getopt::Long: 2.36
+  JSON: 0
+  List::Util: 0
+  POSIX: 0
+  strict: 0
+  warnings: 0
+resources:
+  homepage: http://www.shlomifish.org/open-source/projects/File-Dir-Dumper/
+  license: http://www.opensource.org/licenses/mit-license.php
+  repository: http://svn.berlios.de/svnroot/repos/web-cpan/File-Dir-Dumper/
+version: v0.0.7
