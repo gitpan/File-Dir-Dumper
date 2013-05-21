@@ -28,14 +28,16 @@ my $builder = Test::Run::Builder->new(
         'IO::String' => 0,
         'Test::More' => 0,
     },
+    configure_requires => {
+        'Module::Build' => '0.36',
+    },
     add_to_cleanup      => [ 'File-Dir-Dumper-*' ],
     script_files => ["scripts/dir-dump",],
-    create_makefile_pl => 'passthrough',
     meta_merge =>
     {
         resources =>
         {
-            repository => "http://svn.berlios.de/svnroot/repos/web-cpan/File-Dir-Dumper/",
+            repository => "http://bitbucket.org/shlomif/perl-file-dir-dumper",
             homepage => "http://www.shlomifish.org/open-source/projects/File-Dir-Dumper/",
         },
         keywords =>

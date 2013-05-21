@@ -32,11 +32,11 @@ hash-refs
 
 =head1 VERSION
 
-Version 0.0.7
+Version 0.0.8
 
 =cut
 
-our $VERSION = '0.0.7';
+our $VERSION = '0.0.8';
 
 =head1 SYNOPSIS
 
@@ -86,7 +86,7 @@ sub _init
 
     $self->_user_cache({});
     $self->_group_cache({});
-    
+
     return;
 }
 
@@ -173,9 +173,9 @@ BEGIN
     {
         *_my_getpwuid =
             sub {
-                my $uid = shift; return scalar(getpwuid($uid)); 
+                my $uid = shift; return scalar(getpwuid($uid));
             };
-        *_my_getgrgid = 
+        *_my_getgrgid =
             sub {
                 my $gid = shift; return scalar(getgrgid($gid));
             };
