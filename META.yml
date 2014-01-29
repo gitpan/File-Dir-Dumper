@@ -9,7 +9,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.36
 dynamic_config: 1
-generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 keywords:
   - depth
   - dir
@@ -37,22 +37,22 @@ name: File-Dir-Dumper
 provides:
   File::Dir::Dumper:
     file: lib/File/Dir/Dumper.pm
-    version: v0.0.8
+    version: v0.0.9
   File::Dir::Dumper::App:
     file: lib/File/Dir/Dumper/App.pm
-    version: v0.0.8
+    version: v0.0.9
   File::Dir::Dumper::Base:
     file: lib/File/Dir/Dumper/Base.pm
-    version: v0.0.8
+    version: v0.0.9
   File::Dir::Dumper::Scanner:
     file: lib/File/Dir/Dumper/Scanner.pm
-    version: v0.0.8
+    version: v0.0.9
   File::Dir::Dumper::Stream::JSON::Reader:
     file: lib/File/Dir/Dumper/Stream/JSON/Reader.pm
-    version: v0.0.8
+    version: v0.0.9
   File::Dir::Dumper::Stream::JSON::Writer:
     file: lib/File/Dir/Dumper/Stream/JSON/Writer.pm
-    version: v0.0.8
+    version: v0.0.9
 requires:
   Carp: 0
   Class::Accessor: 0
@@ -62,10 +62,12 @@ requires:
   JSON: 0
   List::Util: 0
   POSIX: 0
+  parent: 0
+  perl: 5.012
   strict: 0
   warnings: 0
 resources:
   homepage: http://www.shlomifish.org/open-source/projects/File-Dir-Dumper/
   license: http://www.opensource.org/licenses/mit-license.php
   repository: http://bitbucket.org/shlomif/perl-file-dir-dumper
-version: v0.0.8
+version: v0.0.9

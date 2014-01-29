@@ -3,7 +3,9 @@ package File::Dir::Dumper::Stream::JSON::Writer;
 use warnings;
 use strict;
 
-use base 'File::Dir::Dumper::Base';
+use 5.012;
+
+use parent 'File::Dir::Dumper::Base';
 
 use Carp;
 
@@ -17,11 +19,11 @@ File::Dir::Dumper::Stream::JSON::Writer - writer for a stream of JSON data.
 
 =head1 VERSION
 
-Version 0.0.8
+Version 0.0.9
 
 =cut
 
-our $VERSION = '0.0.8';
+our $VERSION = '0.0.9';
 
 =head1 SYNOPSIS
 

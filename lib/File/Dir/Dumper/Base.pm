@@ -3,7 +3,9 @@ package File::Dir::Dumper::Base;
 use warnings;
 use strict;
 
-use base 'Class::Accessor';
+use 5.012;
+
+use parent 'Class::Accessor';
 
 =head1 NAME
 
@@ -11,11 +13,11 @@ File::Dir::Dumper::Base - base class for File::Dir::Dumper. B<for internal use>
 
 =head1 VERSION
 
-Version 0.0.8
+Version 0.0.9
 
 =cut
 
-our $VERSION = '0.0.8';
+our $VERSION = '0.0.9';
 
 
 =head1 METHODS

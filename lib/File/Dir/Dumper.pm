@@ -3,6 +3,8 @@ package File::Dir::Dumper;
 use warnings;
 use strict;
 
+use 5.012;
+
 =head1 NAME
 
 File::Dir::Dumper - dump directory structures' meta-data in a consistent and
@@ -10,11 +12,11 @@ machine-readable way.
 
 =head1 VERSION
 
-Version 0.0.8
+Version 0.0.9
 
 =cut
 
-our $VERSION = '0.0.8';
+our $VERSION = '0.0.9';
 
 =head1 SYNOPSIS
 
