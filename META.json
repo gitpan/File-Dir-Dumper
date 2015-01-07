@@ -4,7 +4,7 @@
       "Shlomi Fish <shlomif@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830",
+   "generated_by" : "Module::Build version 0.421",
    "keywords" : [
       "depth",
       "dir",
@@ -53,7 +53,7 @@
             "Devel::CheckOS" : "0",
             "File::Find::Object" : "v0.1.2",
             "Getopt::Long" : "2.36",
-            "JSON" : "0",
+            "JSON::MaybeXS" : "0",
             "List::Util" : "0",
             "POSIX" : "0",
             "parent" : "0",
@@ -66,27 +66,27 @@
    "provides" : {
       "File::Dir::Dumper" : {
          "file" : "lib/File/Dir/Dumper.pm",
-         "version" : "v0.0.9"
+         "version" : "v0.0.10"
       },
       "File::Dir::Dumper::App" : {
          "file" : "lib/File/Dir/Dumper/App.pm",
-         "version" : "v0.0.9"
+         "version" : "v0.0.10"
       },
       "File::Dir::Dumper::Base" : {
          "file" : "lib/File/Dir/Dumper/Base.pm",
-         "version" : "v0.0.9"
+         "version" : "v0.0.10"
       },
       "File::Dir::Dumper::Scanner" : {
          "file" : "lib/File/Dir/Dumper/Scanner.pm",
-         "version" : "v0.0.9"
+         "version" : "v0.0.10"
       },
       "File::Dir::Dumper::Stream::JSON::Reader" : {
          "file" : "lib/File/Dir/Dumper/Stream/JSON/Reader.pm",
-         "version" : "v0.0.9"
+         "version" : "v0.0.10"
       },
       "File::Dir::Dumper::Stream::JSON::Writer" : {
          "file" : "lib/File/Dir/Dumper/Stream/JSON/Writer.pm",
-         "version" : "v0.0.9"
+         "version" : "v0.0.10"
       }
    },
    "release_status" : "stable",
@@ -99,5 +99,5 @@
          "url" : "http://bitbucket.org/shlomif/perl-file-dir-dumper"
       }
    },
-   "version" : "v0.0.9"
+   "version" : "v0.0.10"
 }

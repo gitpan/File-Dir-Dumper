@@ -9,7 +9,7 @@ use parent 'File::Dir::Dumper::Base';
 
 use Carp;
 
-use JSON;
+use JSON::MaybeXS qw(decode_json);
 
 __PACKAGE__->mk_accessors(qw(_in));
 
@@ -19,11 +19,11 @@ File::Dir::Dumper::Stream::JSON::Reader - reader for stream of JSON objects.
 
 =head1 VERSION
 
-Version 0.0.9
+Version 0.0.10
 
 =cut
 
-our $VERSION = '0.0.9';
+our $VERSION = '0.0.10';
 
 =head1 SYNOPSIS
 
@@ -108,7 +108,7 @@ sub fetch
         $line = $self->_readline();
         if ($line eq "--/f\n")
         {
-            return from_json($buffer);
+            return decode_json($buffer);
         }
         else
         {
